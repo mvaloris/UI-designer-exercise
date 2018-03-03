@@ -1,55 +1,67 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-
-
+<!DOCTYPE html>
+<html>
 <head>
-	<title>Welcome to Joe's Diner!</title>
-	<meta charset="UTF-8" />
-    <style>
-body {background:LemonChiffon;font-family:"Comic Sans MS";text-align:center;font-size:20px;}
-#joesdiner {font-size:40px;color:red;}
-#column {width:960px;margin:auto;}
-
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Joe's Diner!</title>
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
-
 <body>
-    <div id="column">
-<img src="pancakes.jpg" height="200" width=300">
+    <header class="main-header">
+        <h1>Joe's Diner</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<span id="joesdiner">&nbsp;&nbsp;&nbsp;<b>
-    Joe's Diner  </b>&nbsp;&nbsp;&nbsp;</span>
+    <main>
+        <header class="hero">
+            <img src="img/burger.jpg" alt="plated burger with a side of onion rings">
+        </header>
+        <section id="about">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>Joe's Diner was opened in Buffalo in 1971. Joseph Shmoe Sr. started this diner with his wife Marla in order to bring their passion for mediocre sustenance to the already restaurant-saturated downtown Buffalo.</p>
+            </div>
+            <img src="img/pancakes.jpg" alt="plated breakfast of pancakes, eggs, and bacon">
+        </section>
+        <section id="menu">
+                <h2>Our Menu</h2>
+                <img src="img/pie.jpg" alt="piece of pumpkin pie with whipcream">
+                <ul>
+                    <li>Bacon ipsum dolor amet meatloaf tenderloin pancetta</li>
+                    <li>Kielbasa spare ribs tongue fatback beef ribs sirloin tail</li>
+                    <li>Tri-tip brisket drumstick sausage</li>
+                    <li>Cupim pancetta venison pig</li>
+                    <li>Spare ribs meatball filet mignon flank pork chuck boudin prosciutto tenderloin beef ribs turkey</li>
+                    <li>Ground round corned beef tri-tip pork</li>
+                    <li>Short loin boudin filet mignon cow capicola prosciutto leberkas short ribs spare ribs chuck</li>
+                    <li>Leberkas kielbasa tenderloin</li>
+                    <li>Sirloin biltong bacon corned beef</li>
+                    <li>Tenderloin meatloaf beef ribs strip steak rump ground round</li>
+                    <li>Shank t-bone brisket pastrami</li>
+                    <li>Shankle bresaola rump short ribs frankfurter venison beef andouille burgdoggen</li>
+                    <li>Chicken cupim bresaola beef pastrami shank corned beef tongue</li>
+                </ul>
                 
-    <img src="burger.jpg" height="200" width=300">
-<img src="">
-<hr>
-
-<b><span>716-270-0000</span>
-<br>
-    <span> 298 Main St.</span><br>
-<span> Buffalo, NY     14202</span></b>
-
-
-<p>Joe's Diner was opened in Buffalo in 1971.
-    Joseph Shmoe Sr. started this diner with his wife Marla in order to bring their passion for mediocre sustenance to the already restaurant-saturated downtown Buffalo.</p>
-
-<p>Bacon ipsum dolor amet meatloaf tenderloin pancetta, kielbasa spare ribs tongue fatback beef ribs sirloin tail. Tri-tip brisket drumstick sausage, cupim pancetta venison pig. Spare ribs meatball filet mignon flank pork chuck boudin prosciutto tenderloin beef ribs turkey. Ground round corned beef tri-tip pork, short loin boudin filet mignon cow capicola prosciutto leberkas short ribs spare ribs chuck.</p>
-    <p>
-            Leberkas kielbasa tenderloin, sirloin biltong bacon corned beef. Tenderloin meatloaf beef ribs strip steak rump ground round, shank t-bone brisket pastrami. Shankle bresaola rump short ribs frankfurter venison beef andouille burgdoggen. Chicken cupim bresaola beef pastrami shank corned beef tongue.
-    </p>
-<img src="pie.jpg" height="200" width=400">
-<hr>
-<h2>Contact Us!</h2>
-    <form action="submit.php" method="post">
-        <label>Comments</label>
-            <textarea rows="4" cols="50"></textarea>
-            <br>
-<label>Email</label>
-<input type="text"/>
-<button type="submit">Submit</button>
-    </form>
-        <br>
-        <br>
-        <br>
-</div>
-</body>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>298 Main Street<br>Buffalo, NY 14202</p>
+            <p>716-270-0000</p>
+            <hr>
+            <form action="submit.php" method="post">
+                <label>Comments</label>
+                    <textarea rows="4" cols="50"></textarea>
+                    <br>
+                <label>Email</label>
+                <input type="text"/>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</html>
